@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps & Cloud Roadmap</title>
+    <link rel="stylesheet" href="devops.css">
+</head>
+
+<body>
+    <br><br><br>
+    <a href="explore.html" class="back-link">← All Roadmaps</a>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">&gt;_</div>
+            <div class="logo-text">CodePath</div>
+        </div>
+
+        <div class="nav-links">
+            <a href="homepage.html" class="home">Home</a>
+            <!-- <a href="#footer" class="AboutUs">AboutUs</a> -->
+            <a href="explore.html" class="Explore">Explore</a>
+            <a href="#" class="signin-btn">Sign In</a>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="icon-box">☁️</div>
+            <div>
+                <h1>DevOps & Cloud</h1>
+                <p>Automate infrastructure, deployments, and operations at scale.</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Timeline -->
+            <div class="timeline">
+
+                <!-- Step 1 -->
+                <div class="step" id="step1">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 1</span>
+                        <h2>Linux & Networking</h2>
+                        <p>Master the command line, shell scripting, and networking fundamentals.</p>
+                        <div class="meta">⏱ 3-4 weeks &nbsp;&nbsp; 📘 Linux Journey · Networking Basics</div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step" id="step2">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 2</span>
+                        <h2>Version Control</h2>
+                        <p>Deep dive into Git workflows, branching strategies, and collaboration.</p>
+                        <div class="meta">⏱ 1-2 weeks &nbsp;&nbsp; 📘 Pro Git Book · GitHub Docs</div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step" id="step3">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 3</span>
+                        <h2>Containers & Docker</h2>
+                        <p>Containerize applications with Docker, write Dockerfiles, and use Docker Compose.</p>
+                        <div class="meta">⏱ 2-3 weeks &nbsp;&nbsp; 📘 Docker Docs · Play with Docker</div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step" id="step4">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 4</span>
+                        <h2>CI/CD Pipelines</h2>
+                        <p>Automate testing and deployment with GitHub Actions, Jenkins, or GitLab CI.</p>
+                        <div class="meta">⏱ 2-3 weeks &nbsp;&nbsp; 📘 GitHub Actions Docs · Jenkins Docs</div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="step" id="step5">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 5</span>
+                        <h2>Cloud Platforms</h2>
+                        <p>Learn AWS, GCP, or Azure — compute, storage, networking, and managed services.</p>
+                        <div class="meta">⏱ 4-6 weeks &nbsp;&nbsp; 📘 AWS Free Tier · GCP Docs</div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="step" id="step6">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 6</span>
+                        <h2>Kubernetes & Orchestration</h2>
+                        <p>Deploy and manage containerized apps at scale with Kubernetes.</p>
+                        <div class="meta">⏱ 4-6 &nbsp;&nbsp; 📘 Kubernetes Docs · KodeKloud</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details-panel" id="panel">
+                <button class="close-btn" onclick="closePanel()">✖</button>
+                <h3>Linux and Networking</h3>
+
+                <section>
+                    <h4>🐧 Linux Fundamentals</h4>
+                    <ul>
+                        <li>Linux file system structure</li>
+                        <li>Basic commands (ls, cd, cp, mv, rm)</li>
+                        <li>User and permission management</li>
+                        <li>Shell scripting basics</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>🌐 Networking Basics</h4>
+                    <ul>
+                        <li>IP Address and DNS</li>
+                        <li>HTTP, HTTPS protocols</li>
+                        <li>Ports and firewalls</li>
+                        <li>Client-server architecture</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>🎯 Goal</h4>
+                    <ul>
+                        <li>Work confidently in Linux environment</li>
+                        <li>Understand how servers communicate</li>
+                        <li>Manage server files and processes</li>
+                    </ul>
+                </section>
+            </div>
+
+        </div>
+
+        <!-- Congratulations Box -->
+        <div class="success-box">
+            🎉 <strong>Congratulations!</strong><br>
+            You've completed the DevOps & Cloud roadmap. Keep building projects and never stop learning!
+        </div>
+
+    </div>
+    <script>
+        const panel = document.getElementById("panel");
+
+        const contentData = {
+
+            step1: {
+                title: "Linux & Networking",
+                content: `
+<section>
+    <h4>🐧 Linux Fundamentals</h4>
+    <ul>
+        <li>Linux file system structure</li>
+        <li>Basic commands (ls, cd, cp, mv, rm)</li>
+        <li>User and permission management</li>
+        <li>Shell scripting basics</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🌐 Networking Basics</h4>
+    <ul>
+        <li>IP Address and DNS</li>
+        <li>HTTP, HTTPS protocols</li>
+        <li>Ports and firewalls</li>
+        <li>Client-server architecture</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Work confidently in Linux environment</li>
+        <li>Understand how servers communicate</li>
+        <li>Manage server files and processes</li>
+    </ul>
+</section>
+        `
+            },
+
+            step2: {
+                title: "Version Control",
+                content: `
+<section>
+    <h4>📂 Git Fundamentals</h4>
+    <ul>
+        <li>Git installation and setup</li>
+        <li>Basic commands (init, add, commit, push)</li>
+        <li>Branching and merging</li>
+        <li>Resolving merge conflicts</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🌍 GitHub / Git Platforms</h4>
+    <ul>
+        <li>Create repositories</li>
+        <li>Pull requests</li>
+        <li>Collaboration workflows</li>
+        <li>Version tracking</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Track code changes</li>
+        <li>Collaborate with teams</li>
+        <li>Manage project versions</li>
+    </ul>
+</section>
+        `
+            },
+
+            step3: {
+                title: "Containers & Docker",
+                content: `
+<section>
+    <h4>📦 Container Basics</h4>
+    <ul>
+        <li>What are containers</li>
+        <li>Containers vs Virtual Machines</li>
+        <li>Container architecture</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🐳 Docker Essentials</h4>
+    <ul>
+        <li>Docker installation</li>
+        <li>Docker images and containers</li>
+        <li>Dockerfile creation</li>
+        <li>Docker Hub usage</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Containerize applications</li>
+        <li>Run apps consistently across environments</li>
+        <li>Simplify deployment</li>
+    </ul>
+</section>
+        `
+            },
+
+            step4: {
+                title: "CI/CD Pipelines",
+                content: `
+<section>
+    <h4>🔄 CI/CD Concepts</h4>
+    <ul>
+        <li>Continuous Integration</li>
+        <li>Continuous Deployment</li>
+        <li>Automation workflows</li>
+        <li>Build and test automation</li>
+    </ul>
+</section>
+
+<section>
+    <h4>⚙️ CI/CD Tools</h4>
+    <ul>
+        <li>GitHub Actions</li>
+        <li>Jenkins</li>
+        <li>GitLab CI/CD</li>
+        <li>CircleCI</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Automate application deployment</li>
+        <li>Reduce manual errors</li>
+        <li>Improve development workflow</li>
+    </ul>
+</section>
+        `
+            },
+
+            step5: {
+                title: "Cloud Platforms",
+                content: `
+<section>
+    <h4>☁️ Cloud Fundamentals</h4>
+    <ul>
+        <li>Cloud computing basics</li>
+        <li>IaaS, PaaS, SaaS models</li>
+        <li>Virtual machines</li>
+        <li>Cloud storage</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🌍 Popular Cloud Providers</h4>
+    <ul>
+        <li>AWS (Amazon Web Services)</li>
+        <li>Microsoft Azure</li>
+        <li>Google Cloud Platform (GCP)</li>
+        <li>DigitalOcean</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Deploy applications to cloud</li>
+        <li>Manage cloud infrastructure</li>
+        <li>Scale applications globally</li>
+    </ul>
+</section>
+        `
+            },
+
+            step6: {
+                title: "Kubernetes & Orchestration",
+                content: `
+<section>
+    <h4>⚓ Kubernetes Basics</h4>
+    <ul>
+        <li>What is Kubernetes</li>
+        <li>Pods and clusters</li>
+        <li>Deployments and services</li>
+        <li>Scaling applications</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🔧 Orchestration Concepts</h4>
+    <ul>
+        <li>Container orchestration</li>
+        <li>Load balancing</li>
+        <li>Auto scaling</li>
+        <li>Monitoring and logging</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Manage containerized applications</li>
+        <li>Automate scaling and deployment</li>
+        <li>Run production-level systems</li>
+    </ul>
+</section>
+        `
+            }
+
+        };
+
+        document.querySelectorAll(".step").forEach(step => {
+            step.addEventListener("click", function () {
+                const stepId = this.id;
+                const data = contentData[stepId];
+
+                panel.innerHTML = `
+            <button class="close-btn" onclick="closePanel()">✖</button>
+            <h3>${data.title}</h3>
+            ${data.content}
+        `;
+
+                panel.style.display = "block";
+            });
+        });
+
+        function closePanel() {
+            panel.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
