@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>System Design Roadmap</title>
+    <link rel="stylesheet" href="system.css">
+</head>
+
+<body>
+    <br><br><br>
+    <a href="explore.html" class="back-link">← All Roadmaps</a>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">&gt;_</div>
+            <div class="logo-text">CodePath</div>
+        </div>
+
+        <div class="nav-links">
+            <a href="homepage.html" class="home">Home</a>
+            <!-- <a href="#footer" class="AboutUs">AboutUs</a> -->
+            <a href="explore.html" class="Explore">Explore</a>
+            <a href="#" class="signin-btn">Sign In</a>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="icon-box">⚙️</div>
+            <div>
+                <h1>System Design</h1>
+                <p>Architect scalable, reliable, and performant distributed systems.</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Timeline -->
+            <div class="timeline">
+
+                <!-- Step 1 -->
+                <div class="step" id="step1">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 1</span>
+                        <h2>Fundamentals</h2>
+                        <p>Understand client-server architecture, DNS, load balancers, and CDNs.</p>
+                        <div class="meta">⏱ 2-3 weeks &nbsp;&nbsp; 📘 System Design Primer · ByteByteGo</div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step" id="step2">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 2</span>
+                        <h2>Databases & Storage</h2>
+                        <p>Learn SQL vs NoSQL trade-offs, sharding, replication, and caching strategies.</p>
+                        <div class="meta">⏱ 3-4 weeks &nbsp;&nbsp; 📘 Designing Data-Intensive Applications · Redis Docs
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step" id="step3">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 3</span>
+                        <h2>Scalability Patterns</h2>
+                        <p>Master horizontal scaling, microservices, message queues, and event-driven architecture.</p>
+                        <div class="meta">⏱ 3-4 weeks &nbsp;&nbsp; 📘 Martin Fowler's Blog · AWS Architecture Center
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step" id="step4">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 4</span>
+                        <h2>API Design</h2>
+                        <p>Design robust APIs — REST, GraphQL, gRPC — with versioning and rate limiting.</p>
+                        <div class="meta">⏱ 2-3 weeks &nbsp;&nbsp; 📘 Google API Design Guide · GraphQL Docs</div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="step" id="step5">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 5</span>
+                        <h2>Reliability & Monitoring</h2>
+                        <p>Implement fault tolerance, circuit breakers, observability, and SLAs/SLOs.</p>
+                        <div class="meta">⏱ 3-4 weeks &nbsp;&nbsp; 📘 Google SRE Book · Prometheus Docs</div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="step" id="step6">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 6</span>
+                        <h2>Real-World Case Studies</h2>
+                        <p>Design systems like URL shorteners, chat apps, news feeds, and video streaming platforms.</p>
+                        <div class="meta">⏱ 4-6 &nbsp;&nbsp; 📘 System Design Interview Book · Educative.io</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details-panel" id="panel">
+                <button class="close-btn" onclick="closePanel()">✖</button>
+                <h3>Fundamentals</h3>
+
+                <section>
+                    <h4>📌 Core Concepts</h4>
+                    <ul>
+                        <li>What is System Design?</li>
+                        <li>Functional vs Non-Functional Requirements</li>
+                        <li>Scalability (Vertical vs Horizontal)</li>
+                        <li>Latency vs Throughput</li>
+                        <li>Availability & Reliability</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>🌐 Networking Basics</h4>
+                    <ul>
+                        <li>HTTP / HTTPS</li>
+                        <li>TCP vs UDP</li>
+                        <li>DNS</li>
+                        <li>Load Balancers</li>
+                        <li>CDN</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>🏗️ Architectural Patterns</h4>
+                    <ul>
+                        <li>Monolith Architecture</li>
+                        <li>Microservices Architecture</li>
+                        <li>Client-Server Model</li>
+                        <li>Event-Driven Architecture</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Congratulations Box -->
+        <div class="success-box">
+            🎉 <strong>Congratulations!</strong><br>
+            You've completed the System Design roadmap. Keep building projects and never stop learning!
+        </div>
+    </div>
+
+    <script>
+        const panel = document.getElementById("panel");
+
+        const contentData = {
+            step1: {
+                title: "Fundamentals",
+                content: `
+<section>
+    <h4>📌 Core Concepts</h4>
+    <ul>
+        <li>What is System Design?</li>
+        <li>Functional vs Non-Functional Requirements</li>
+        <li>Scalability (Vertical vs Horizontal)</li>
+        <li>Latency vs Throughput</li>
+        <li>Availability & Reliability</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🌐 Networking Basics</h4>
+    <ul>
+        <li>HTTP / HTTPS</li>
+        <li>TCP vs UDP</li>
+        <li>DNS</li>
+        <li>Load Balancers</li>
+        <li>CDN</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🏗️ Architectural Patterns</h4>
+    <ul>
+        <li>Monolith Architecture</li>
+        <li>Microservices Architecture</li>
+        <li>Client-Server Model</li>
+        <li>Event-Driven Architecture</li>
+    </ul>
+</section>
+        `
+            },
+
+            step2: {
+                title: "Databases & Storage",
+                content: `
+<section>
+    <h4>🗄️ Database Fundamentals</h4>
+    <ul>
+        <li>SQL vs NoSQL</li>
+        <li>ACID Properties</li>
+        <li>CAP Theorem</li>
+        <li>Indexing</li>
+        <li>Normalization vs Denormalization</li>
+    </ul>
+</section>
+
+<section>
+    <h4>📊 Types of Databases</h4>
+    <ul>
+        <li>Relational Databases (MySQL, PostgreSQL)</li>
+        <li>Document Databases (MongoDB)</li>
+        <li>Key-Value Stores (Redis)</li>
+        <li>Column-Based Databases</li>
+        <li>Graph Databases</li>
+    </ul>
+</section>
+
+<section>
+    <h4>💾 Storage Systems</h4>
+    <ul>
+        <li>File Storage</li>
+        <li>Object Storage</li>
+        <li>Block Storage</li>
+        <li>Data Replication</li>
+        <li>Backup Strategies</li>
+    </ul>
+</section>
+        `
+            },
+
+            step3: {
+                title: "Scalability Patterns",
+                content: `
+<section>
+    <h4>📈 Scaling Strategies</h4>
+    <ul>
+        <li>Vertical Scaling</li>
+        <li>Horizontal Scaling</li>
+        <li>Auto Scaling</li>
+        <li>Sharding</li>
+        <li>Partitioning</li>
+    </ul>
+</section>
+
+<section>
+    <h4>⚡ Performance Optimization</h4>
+    <ul>
+        <li>Caching (Redis, CDN)</li>
+        <li>Database Optimization</li>
+        <li>Connection Pooling</li>
+        <li>Lazy Loading</li>
+    </ul>
+</section>
+
+<section>
+    <h4>📨 Distributed Systems Patterns</h4>
+    <ul>
+        <li>Message Queues (Kafka, RabbitMQ)</li>
+        <li>Event Streaming</li>
+        <li>Rate Limiting</li>
+        <li>Circuit Breaker Pattern</li>
+    </ul>
+</section>
+        `
+            },
+
+            step4: {
+                title: "API Design",
+                content: `
+<section>
+    <h4>🔗 API Fundamentals</h4>
+    <ul>
+        <li>REST Architecture</li>
+        <li>GraphQL Basics</li>
+        <li>SOAP Overview</li>
+        <li>HTTP Status Codes</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🔐 Security & Authentication</h4>
+    <ul>
+        <li>JWT</li>
+        <li>OAuth 2.0</li>
+        <li>API Keys</li>
+        <li>Rate Limiting & Throttling</li>
+    </ul>
+</section>
+
+<section>
+    <h4>📘 API Best Practices</h4>
+    <ul>
+        <li>Versioning</li>
+        <li>Pagination</li>
+        <li>Error Handling</li>
+        <li>Idempotency</li>
+        <li>Documentation (Swagger / OpenAPI)</li>
+    </ul>
+</section>
+        `
+            },
+
+            step5: {
+                title: "Reliability & Monitoring",
+                content: `
+<section>
+    <h4>🛡️ Reliability Concepts</h4>
+    <ul>
+        <li>High Availability</li>
+        <li>Redundancy</li>
+        <li>Failover Mechanisms</li>
+        <li>Disaster Recovery</li>
+    </ul>
+</section>
+
+<section>
+    <h4>📊 Monitoring & Logging</h4>
+    <ul>
+        <li>Logging Systems</li>
+        <li>Metrics & Alerting</li>
+        <li>APM Tools</li>
+        <li>Health Checks</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🔍 Observability</h4>
+    <ul>
+        <li>Tracing</li>
+        <li>Centralized Logging</li>
+        <li>SLA, SLO & SLI</li>
+        <li>Incident Management</li>
+    </ul>
+</section>
+        `
+            },
+
+            step6: {
+                title: "Real-World Case Studies",
+                content: `
+<section>
+    <h4>📱 Designing Popular Systems</h4>
+    <ul>
+        <li>Design a URL Shortener</li>
+        <li>Design Instagram</li>
+        <li>Design WhatsApp</li>
+        <li>Design YouTube</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🛒 E-commerce & Payments</h4>
+    <ul>
+        <li>Design Amazon-like Store</li>
+        <li>Shopping Cart System</li>
+        <li>Payment Gateway Integration</li>
+        <li>Order Management System</li>
+    </ul>
+</section>
+
+<section>
+    <h4>💬 Real-Time Systems</h4>
+    <ul>
+        <li>Chat Application</li>
+        <li>Notification System</li>
+        <li>Live Streaming Platform</li>
+        <li>Ride Sharing System</li>
+    </ul>
+</section>
+        `
+            }
+        };
+
+        document.querySelectorAll(".step").forEach(step => {
+            step.addEventListener("click", function () {
+                const stepId = this.id;
+                const data = contentData[stepId];
+
+                panel.innerHTML = `
+            <button class="close-btn" onclick="closePanel()">✖</button>
+            <h3>${data.title}</h3>
+            ${data.content}
+        `;
+
+                panel.style.display = "block";
+            });
+        });
+
+        function closePanel() {
+            panel.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

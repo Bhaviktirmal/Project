@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FullStack Development Roadmap</title>
+    <link rel="stylesheet" href="fullstack.css">
+</head>
+
+<body>
+    <br><br><br>
+    <a href="explore.html" class="back-link">← All Roadmaps</a>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">&gt;_</div>
+            <div class="logo-text">CodePath</div>
+        </div>
+
+        <div class="nav-links">
+            <a href="homepage.html" class="home">Home</a>
+            <!-- <a href="#footer" class="AboutUs">AboutUs</a> -->
+            <a href="explore.html" class="Explore">Explore</a>
+            <a href="#" class="signin-btn">Sign In</a>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="icon-box">💻</div>
+            <div>
+                <h1>Full Stack Development</h1>
+                <p>Master both frontend and backend to build complete web applications.</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Timeline -->
+            <div class="timeline">
+
+                <!-- Step 1 -->
+                <div class="step" id="step1">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 1</span>
+                        <h2>HTML, CSS & JavaScript</h2>
+                        <p>Build a strong foundation with web fundamentals before diving into frameworks.</p>
+                        <div class="meta">⏱ 4-6 weeks &nbsp;&nbsp; 📘 freeCodeCamp · The Odin Project</div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step" id="step2">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 2</span>
+                        <h2>Frontend Framework</h2>
+                        <p>Learn React, Vue, or Angular to build dynamic, component-based interfaces.</p>
+                        <div class="meta">⏱ 4-6 weeks &nbsp;&nbsp; 📘 React Docs · Vue.js Guide</div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step" id="step3">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 3</span>
+                        <h2>Backend & APIs</h2>
+                        <p>Build RESTful APIs with Node.js/Express, Python/Django, or similar stacks.</p>
+                        <div class="meta">⏱ 4-6 weeks &nbsp;&nbsp; 📘 Express Docs · Django Docs</div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step" id="step4">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 4</span>
+                        <h2>Databases</h2>
+                        <p>Design schemas, write queries, and use ORMs with PostgreSQL or MongoDB.</p>
+                        <div class="meta">⏱ 3-4 weeks &nbsp;&nbsp; 📘 Prisma Docs · MongoDB University</div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="step" id="step5">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 5</span>
+                        <h2>Authentication & State</h2>
+                        <p>Implement user auth, session management, and global state patterns.</p>
+                        <div class="meta">⏱ 2-3 weeks &nbsp;&nbsp; 📘 NextAuth.js · Zustand</div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="step" id="step6">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 6</span>
+                        <h2>Deployment & DevOps</h2>
+                        <p>Deploy full-stack apps with Docker, Vercel, Railway, or AWS.</p>
+                        <div class="meta">⏱ 2-3 &nbsp;&nbsp; 📘 Vercel Docs · Railway Docs</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details-panel" id="panel">
+                <button class="close-btn" onclick="closePanel()">✖</button>
+                <h3>HTML, CSS & JavaScript</h3>
+
+                <section>
+                    <h4>🌐 HTML Fundamentals</h4>
+                    <ul>
+                        <li>HTML structure and tags</li>
+                        <li>Forms and input elements</li>
+                        <li>Semantic HTML</li>
+                        <li>Accessibility basics</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>🎨 CSS Fundamentals</h4>
+                    <ul>
+                        <li>Selectors and properties</li>
+                        <li>Flexbox and Grid</li>
+                        <li>Responsive design</li>
+                        <li>Animations and transitions</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>⚡ JavaScript Basics</h4>
+                    <ul>
+                        <li>Variables, functions, loops</li>
+                        <li>DOM manipulation</li>
+                        <li>Events handling</li>
+                        <li>ES6 features</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>🎯 Goal</h4>
+                    <ul>
+                        <li>Build responsive web pages</li>
+                        <li>Create interactive UI</li>
+                        <li>Understand frontend fundamentals</li>
+                    </ul>
+                </section>
+            </div>
+
+        </div>
+
+        <!-- Congratulations Box -->
+        <div class="success-box">
+            🎉 <strong>Congratulations!</strong><br>
+            You've completed the Full Stack Development roadmap. Keep building projects and never stop learning!
+        </div>
+
+    </div>
+
+    <script>
+        const panel = document.getElementById("panel");
+
+        const contentData = {
+
+            step1: {
+                title: "HTML, CSS & JavaScript",
+                content: `
+<section>
+    <h4>🌐 HTML Fundamentals</h4>
+    <ul>
+        <li>HTML structure and tags</li>
+        <li>Forms and input elements</li>
+        <li>Semantic HTML</li>
+        <li>Accessibility basics</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎨 CSS Fundamentals</h4>
+    <ul>
+        <li>Selectors and properties</li>
+        <li>Flexbox and Grid</li>
+        <li>Responsive design</li>
+        <li>Animations and transitions</li>
+    </ul>
+</section>
+
+<section>
+    <h4>⚡ JavaScript Basics</h4>
+    <ul>
+        <li>Variables, functions, loops</li>
+        <li>DOM manipulation</li>
+        <li>Events handling</li>
+        <li>ES6 features</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Build responsive web pages</li>
+        <li>Create interactive UI</li>
+        <li>Understand frontend fundamentals</li>
+    </ul>
+</section>
+        `
+            },
+
+            step2: {
+                title: "Frontend Framework",
+                content: `
+<section>
+    <h4>⚛️ Popular Frameworks</h4>
+    <ul>
+        <li>React.js</li>
+        <li>Vue.js</li>
+        <li>Angular</li>
+        <li>Component-based architecture</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🧩 Core Concepts</h4>
+    <ul>
+        <li>Components and props</li>
+        <li>State management</li>
+        <li>Routing</li>
+        <li>Lifecycle methods</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Build modern frontend apps</li>
+        <li>Create reusable components</li>
+        <li>Manage application state</li>
+    </ul>
+</section>
+        `
+            },
+
+            step3: {
+                title: "Backend & APIs",
+                content: `
+<section>
+    <h4>🖥️ Backend Basics</h4>
+    <ul>
+        <li>Server-side programming</li>
+        <li>Node.js fundamentals</li>
+        <li>Express.js framework</li>
+        <li>Routing and middleware</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🔗 API Development</h4>
+    <ul>
+        <li>REST API concepts</li>
+        <li>CRUD operations</li>
+        <li>JSON data handling</li>
+        <li>API testing (Postman)</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Build backend servers</li>
+        <li>Create APIs</li>
+        <li>Connect frontend with backend</li>
+    </ul>
+</section>
+        `
+            },
+
+            step4: {
+                title: "Databases",
+                content: `
+<section>
+    <h4>🗄️ Database Types</h4>
+    <ul>
+        <li>SQL databases (MySQL, PostgreSQL)</li>
+        <li>NoSQL databases (MongoDB)</li>
+        <li>Relational vs Non-relational</li>
+    </ul>
+</section>
+
+<section>
+    <h4>📊 Database Concepts</h4>
+    <ul>
+        <li>Tables and collections</li>
+        <li>CRUD operations</li>
+        <li>Indexes and relationships</li>
+        <li>Database design basics</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Store application data</li>
+        <li>Retrieve and manage data</li>
+        <li>Design efficient databases</li>
+    </ul>
+</section>
+        `
+            },
+
+            step5: {
+                title: "Authentication & State",
+                content: `
+<section>
+    <h4>🔐 Authentication</h4>
+    <ul>
+        <li>User login and registration</li>
+        <li>JWT authentication</li>
+        <li>Sessions and cookies</li>
+        <li>Password hashing</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🧠 State Management</h4>
+    <ul>
+        <li>Local storage and session storage</li>
+        <li>Frontend state management</li>
+        <li>Redux or Context API</li>
+        <li>Managing user sessions</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Secure user authentication</li>
+        <li>Manage user sessions</li>
+        <li>Build secure applications</li>
+    </ul>
+</section>
+        `
+            },
+
+            step6: {
+                title: "Deployment & DevOps",
+                content: `
+<section>
+    <h4>🚀 Deployment Basics</h4>
+    <ul>
+        <li>Deploy frontend (Netlify, Vercel)</li>
+        <li>Deploy backend (Render, Railway)</li>
+        <li>Environment variables</li>
+        <li>Production build</li>
+    </ul>
+</section>
+
+<section>
+    <h4>⚙️ DevOps Concepts</h4>
+    <ul>
+        <li>CI/CD pipelines</li>
+        <li>Docker basics</li>
+        <li>Cloud platforms (AWS, GCP)</li>
+        <li>Monitoring and logging</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Deploy full stack applications</li>
+        <li>Manage production systems</li>
+        <li>Build scalable applications</li>
+    </ul>
+</section>
+        `
+            }
+
+        };
+
+        document.querySelectorAll(".step").forEach(step => {
+            step.addEventListener("click", function () {
+                const stepId = this.id;
+                const data = contentData[stepId];
+
+                panel.innerHTML = `
+            <button class="close-btn" onclick="closePanel()">✖</button>
+            <h3>${data.title}</h3>
+            ${data.content}
+        `;
+
+                panel.style.display = "block";
+            });
+        });
+
+        function closePanel() {
+            panel.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

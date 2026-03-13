@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI & ML Roadmap</title>
+    <link rel="stylesheet" href="ai.css">
+
+</head>
+
+<body>
+    <br><br><br>
+    <a href="explore.html" class="back-link">← All Roadmaps</a>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">&gt;_</div>
+            <div class="logo-text">CodePath</div>
+        </div>
+
+        <div class="nav-links">
+            <a href="homepage.html" class="home">Home</a>
+            <!-- <a href="#footer" class="AboutUs">AboutUs</a> -->
+            <a href="explore.html" class="Explore">Explore</a>
+            <a href="#" class="signin-btn">Sign In</a>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="icon-box">🧠</div>
+            <div>
+                <h1>AI & Machine Learning</h1>
+                <p>Build intelligent systems that learn from data and make predictions.</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Timeline -->
+            <div class="timeline">
+
+                <!-- Step 1 -->
+                <div class="step" id="step1">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 1</span>
+                        <h2>Math Foundations</h2>
+                        <p>Brush up on linear algebra, calculus, and probability — the math behind ML.</p>
+                        <div class="meta">⏱ 3-4 weeks &nbsp;&nbsp; 📘 3Blue1Brown · Khan Academy</div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step" id="step2">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 2</span>
+                        <h2>Python & Libraries</h2>
+                        <p>Master NumPy, Pandas, and Matplotlib for data manipulation and visualization.</p>
+                        <div class="meta">⏱ 2-3 weeks &nbsp;&nbsp; 📘 Python Data Science Handbook · Kaggle</div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step" id="step3">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 3</span>
+                        <h2>Classical ML</h2>
+                        <p>Learn regression, classification, clustering, and model evaluation with Scikit-learn.</p>
+                        <div class="meta">⏱ 4-6 weeks &nbsp;&nbsp; 📘 Scikit-learn Docs · Google ML Crash Course</div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step" id="step4">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 4</span>
+                        <h2>Deep Learning</h2>
+                        <p>Build neural networks, CNNs, and RNNs with PyTorch or TensorFlow.</p>
+                        <div class="meta">⏱ 6-8 weeks &nbsp;&nbsp; 📘 Fast.ai · Deep Learning Specialization</div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="step" id="step5">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 5</span>
+                        <h2>NLP & Computer Vision</h2>
+                        <p>Work with text data using transformers and image data using CNNs.</p>
+                        <div class="meta">⏱ 4-6 weeks &nbsp;&nbsp; 📘 Hugging Face · CS231n</div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="step" id="step6">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 6</span>
+                        <h2>MLOps & Deployment</h2>
+                        <p>Deploy models to production with Flask, FastAPI, Docker, and cloud services.</p>
+                        <div class="meta">⏱ 3-4 &nbsp;&nbsp; 📘 MLflow · AWS SageMaker</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="details-panel" id="panel">
+                <button class="close-btn" onclick="closePanel()">✖</button>
+                <h3>Math Foundations</h3>
+
+                <section>
+                    <h4>📊 Linear Algebra</h4>
+                    <ul>
+                        <li>Vectors and matrices</li>
+                        <li>Matrix operations</li>
+                        <li>Eigenvalues and eigenvectors</li>
+                        <li>Vector spaces</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>📈 Probability & Statistics</h4>
+                    <ul>
+                        <li>Probability rules</li>
+                        <li>Random variables</li>
+                        <li>Distributions (Normal, Binomial)</li>
+                        <li>Mean, variance, standard deviation</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>📉 Calculus Basics</h4>
+                    <ul>
+                        <li>Derivatives</li>
+                        <li>Partial derivatives</li>
+                        <li>Gradients</li>
+                        <li>Optimization concepts</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>🎯 Goal</h4>
+                    <ul>
+                        <li>Understand ML algorithms mathematically</li>
+                        <li>Build strong theoretical foundation</li>
+                        <li>Prepare for deep learning concepts</li>
+                    </ul>
+                </section>
+            </div>
+
+        </div>
+
+        <!-- Congratulations Box -->
+        <div class="success-box">
+            🎉 <strong>Congratulations!</strong><br>
+            You've completed the AI & Machine Learning roadmap. Keep building projects and never stop learning!
+        </div>
+
+    </div>
+
+    <script>
+        const panel = document.getElementById("panel");
+
+        const contentData = {
+
+            step1: {
+                title: "Math Foundations",
+                content: `
+<section>
+    <h4>📊 Linear Algebra</h4>
+    <ul>
+        <li>Vectors and matrices</li>
+        <li>Matrix operations</li>
+        <li>Eigenvalues and eigenvectors</li>
+        <li>Vector spaces</li>
+    </ul>
+</section>
+
+<section>
+    <h4>📈 Probability & Statistics</h4>
+    <ul>
+        <li>Probability rules</li>
+        <li>Random variables</li>
+        <li>Distributions (Normal, Binomial)</li>
+        <li>Mean, variance, standard deviation</li>
+    </ul>
+</section>
+
+<section>
+    <h4>📉 Calculus Basics</h4>
+    <ul>
+        <li>Derivatives</li>
+        <li>Partial derivatives</li>
+        <li>Gradients</li>
+        <li>Optimization concepts</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Understand ML algorithms mathematically</li>
+        <li>Build strong theoretical foundation</li>
+        <li>Prepare for deep learning concepts</li>
+    </ul>
+</section>
+        `
+            },
+
+            step2: {
+                title: "Python & Libraries",
+                content: `
+<section>
+    <h4>🐍 Python Fundamentals</h4>
+    <ul>
+        <li>Variables, loops, functions</li>
+        <li>Object-oriented programming</li>
+        <li>File handling</li>
+        <li>Error handling</li>
+    </ul>
+</section>
+
+<section>
+    <h4>📚 Essential Libraries</h4>
+    <ul>
+        <li>NumPy for numerical computing</li>
+        <li>Pandas for data analysis</li>
+        <li>Matplotlib and Seaborn</li>
+        <li>Scikit-learn basics</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Work with datasets</li>
+        <li>Analyze and preprocess data</li>
+        <li>Prepare data for ML models</li>
+    </ul>
+</section>
+        `
+            },
+
+            step3: {
+                title: "Classical ML",
+                content: `
+<section>
+    <h4>🤖 Supervised Learning</h4>
+    <ul>
+        <li>Linear Regression</li>
+        <li>Logistic Regression</li>
+        <li>Decision Trees</li>
+        <li>Support Vector Machines</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🧠 Unsupervised Learning</h4>
+    <ul>
+        <li>K-Means Clustering</li>
+        <li>Hierarchical Clustering</li>
+        <li>Dimensionality Reduction (PCA)</li>
+        <li>Anomaly detection</li>
+    </ul>
+</section>
+
+<section>
+    <h4>📊 Model Evaluation</h4>
+    <ul>
+        <li>Accuracy, precision, recall</li>
+        <li>Confusion matrix</li>
+        <li>Train/test split</li>
+        <li>Cross-validation</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Build predictive models</li>
+        <li>Evaluate model performance</li>
+        <li>Solve real-world ML problems</li>
+    </ul>
+</section>
+        `
+            },
+
+            step4: {
+                title: "Deep Learning",
+                content: `
+<section>
+    <h4>🧠 Neural Network Basics</h4>
+    <ul>
+        <li>Neurons and layers</li>
+        <li>Activation functions</li>
+        <li>Forward and backpropagation</li>
+        <li>Loss functions</li>
+    </ul>
+</section>
+
+<section>
+    <h4>⚙️ Frameworks</h4>
+    <ul>
+        <li>TensorFlow</li>
+        <li>PyTorch</li>
+        <li>Keras</li>
+        <li>Model training and tuning</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Build neural networks</li>
+        <li>Train deep learning models</li>
+        <li>Solve complex AI problems</li>
+    </ul>
+</section>
+        `
+            },
+
+            step5: {
+                title: "NLP & Computer Vision",
+                content: `
+<section>
+    <h4>📝 Natural Language Processing</h4>
+    <ul>
+        <li>Text preprocessing</li>
+        <li>Tokenization</li>
+        <li>Sentiment analysis</li>
+        <li>Text classification</li>
+    </ul>
+</section>
+
+<section>
+    <h4>👁️ Computer Vision</h4>
+    <ul>
+        <li>Image processing basics</li>
+        <li>Image classification</li>
+        <li>Object detection</li>
+        <li>Face recognition</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🧰 Tools & Libraries</h4>
+    <ul>
+        <li>OpenCV</li>
+        <li>NLTK and SpaCy</li>
+        <li>Transformers</li>
+        <li>CNN models</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Build AI applications</li>
+        <li>Work with text and images</li>
+        <li>Create intelligent systems</li>
+    </ul>
+</section>
+        `
+            },
+
+            step6: {
+                title: "MLOps & Deployment",
+                content: `
+<section>
+    <h4>🚀 Model Deployment</h4>
+    <ul>
+        <li>Deploy models using Flask or FastAPI</li>
+        <li>Create ML APIs</li>
+        <li>Integrate ML with applications</li>
+        <li>Cloud deployment</li>
+    </ul>
+</section>
+
+<section>
+    <h4>⚙️ MLOps Concepts</h4>
+    <ul>
+        <li>Model versioning</li>
+        <li>Model monitoring</li>
+        <li>Automation pipelines</li>
+        <li>CI/CD for ML</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🧰 Tools</h4>
+    <ul>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>MLflow</li>
+        <li>Cloud platforms (AWS, GCP)</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Deploy ML models to production</li>
+        <li>Manage ML lifecycle</li>
+        <li>Build real-world AI systems</li>
+    </ul>
+</section>
+        `
+            }
+
+        };
+
+        document.querySelectorAll(".step").forEach(step => {
+            step.addEventListener("click", function () {
+                const stepId = this.id;
+                const data = contentData[stepId];
+
+                panel.innerHTML = `
+            <button class="close-btn" onclick="closePanel()">✖</button>
+            <h3>${data.title}</h3>
+            ${data.content}
+        `;
+
+                panel.style.display = "block";
+            });
+        });
+
+        function closePanel() {
+            panel.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
