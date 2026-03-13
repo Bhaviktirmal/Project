@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Backend Development Roadmap</title>
+    <link rel="stylesheet" href="backend.css">
+</head>
+
+<body>
+    <br><br><br>
+    <a href="explore.html" class="back-link">← All Roadmaps</a>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">&gt;_</div>
+            <div class="logo-text">CodePath</div>
+        </div>
+
+        <div class="nav-links">
+            <a href="homepage.html" class="home">Home</a>
+            <!-- <a href="#footer" class="AboutUs">AboutUs</a> -->
+            <a href="explore.html" class="Explore">Explore</a>
+            <a href="#" class="signin-btn">Sign In</a>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="icon-box">🗄️</div>
+            <div>
+                <h1>Backend Development</h1>
+                <p>Design and build scalable server-side applications and APIs.</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Timeline -->
+            <div class="timeline">
+
+                <!-- Step 1 -->
+                <div class="step" id="step1">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 1</span>
+                        <h2>Pick a Language</h2>
+                        <p>Choose Node.js (JavaScript), Python, Go, or Java as your backend language.</p>
+                        <div class="meta">⏱ 3-4 weeks &nbsp;&nbsp; 📘 Node.js Docs · Python Docs</div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step" id="step2">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 2</span>
+                        <h2>HTTP & REST APIs</h2>
+                        <p>Understand how the web works — HTTP methods, status codes, REST principles.</p>
+                        <div class="meta">⏱ 1-2 weeks &nbsp;&nbsp; 📘 RESTful API Design · MDN HTTP</div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step" id="step3">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 3</span>
+                        <h2>Databases</h2>
+                        <p>Learn SQL (PostgreSQL/MySQL) and NoSQL (MongoDB). Understand schemas, queries, and indexing.
+                        </p>
+                        <div class="meta">⏱ 3-4 weeks &nbsp;&nbsp; 📘 SQLBolt · MongoDB University</div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step" id="step4">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 4</span>
+                        <h2>Authentication & Security</h2>
+                        <p>Implement JWT, OAuth, password hashing, and security best practices.</p>
+                        <div class="meta">⏱ 2-3 weeks &nbsp;&nbsp; 📘 OWASP Guide · Auth0 Docs</div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="step" id="step5">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 5</span>
+                        <h2>Frameworks</h2>
+                        <p>Use Express.js, FastAPI, Django, or Spring Boot to build production-grade APIs.</p>
+                        <div class="meta">⏱ 3-4 weeks &nbsp;&nbsp; 📘 Express Docs · FastAPI Docs</div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="step" id="step6">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 6</span>
+                        <h2>DevOps Basics</h2>
+                        <p>Containerize with Docker, set up CI/CD pipelines, and deploy to the cloud.</p>
+                        <div class="meta">⏱ 2-3 weeks &nbsp;&nbsp; 📘 Docker Docs · GitHub Actions</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="details-panel" id="panel">
+                <button class="close-btn" onclick="closePanel()">✖</button>
+                <h3>Pick a Language</h3>
+                <section>
+                    <h4>💻 Popular Backend Languages</h4>
+                    <ul>
+                        <li>JavaScript (Node.js)</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>PHP</li>
+                        <li>Go</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>📚 What to Learn First</h4>
+                    <ul>
+                        <li>Syntax & Data Types</li>
+                        <li>Functions & Modules</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Error Handling</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>🎯 Goal</h4>
+                    <ul>
+                        <li>Build CLI Programs</li>
+                        <li>Understand Server-Side Logic</li>
+                        <li>Work with Files & Environment Variables</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Congratulations Box -->
+        <div class="success-box">
+            🎉 <strong>Congratulations!</strong><br>
+            You've completed the Backend Development roadmap. Keep building projects and never stop learning!
+        </div>
+
+    </div>
+
+    <script>
+        const panel = document.getElementById("panel");
+
+        const contentData = {
+
+            step1: {
+                title: "Pick a Language",
+                content: `
+<section>
+    <h4>💻 Popular Backend Languages</h4>
+    <ul>
+        <li>JavaScript (Node.js)</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>Go</li>
+    </ul>
+</section>
+
+<section>
+    <h4>📚 What to Learn First</h4>
+    <ul>
+        <li>Syntax & Data Types</li>
+        <li>Functions & Modules</li>
+        <li>Object-Oriented Programming</li>
+        <li>Error Handling</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Build CLI Programs</li>
+        <li>Understand Server-Side Logic</li>
+        <li>Work with Files & Environment Variables</li>
+    </ul>
+</section>
+        `
+            },
+
+            step2: {
+                title: "HTTP & REST APIs",
+                content: `
+<section>
+    <h4>🌐 HTTP Fundamentals</h4>
+    <ul>
+        <li>HTTP Methods (GET, POST, PUT, DELETE)</li>
+        <li>Status Codes (200, 404, 500)</li>
+        <li>Request & Response Structure</li>
+        <li>Headers & JSON</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🔗 REST API Concepts</h4>
+    <ul>
+        <li>Routing</li>
+        <li>CRUD Operations</li>
+        <li>API Testing with Postman</li>
+        <li>RESTful Architecture</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🚀 Practice</h4>
+    <ul>
+        <li>Create a Simple API</li>
+        <li>Build a CRUD Application</li>
+        <li>Connect API with Frontend</li>
+    </ul>
+</section>
+        `
+            },
+
+            step3: {
+                title: "Databases",
+                content: `
+<section>
+    <h4>🗄️ Types of Databases</h4>
+    <ul>
+        <li>SQL (MySQL, PostgreSQL)</li>
+        <li>NoSQL (MongoDB)</li>
+        <li>Relational vs Non-Relational</li>
+    </ul>
+</section>
+
+<section>
+    <h4>📊 Core Concepts</h4>
+    <ul>
+        <li>Tables & Collections</li>
+        <li>CRUD Operations</li>
+        <li>Joins & Relationships</li>
+        <li>Indexes</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🔄 ORM / ODM</h4>
+    <ul>
+        <li>Sequelize</li>
+        <li>Prisma</li>
+        <li>Mongoose</li>
+    </ul>
+</section>
+        `
+            },
+
+            step4: {
+                title: "Authentication & Security",
+                content: `
+<section>
+    <h4>🔐 Authentication</h4>
+    <ul>
+        <li>JWT (JSON Web Tokens)</li>
+        <li>Sessions & Cookies</li>
+        <li>Password Hashing (bcrypt)</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🛡️ Security Basics</h4>
+    <ul>
+        <li>HTTPS</li>
+        <li>CORS</li>
+        <li>Rate Limiting</li>
+        <li>Input Validation</li>
+    </ul>
+</section>
+
+<section>
+    <h4>⚠️ Common Attacks</h4>
+    <ul>
+        <li>SQL Injection</li>
+        <li>XSS</li>
+        <li>CSRF</li>
+    </ul>
+</section>
+        `
+            },
+
+            step5: {
+                title: "Frameworks",
+                content: `
+<section>
+    <h4>⚙️ Popular Frameworks</h4>
+    <ul>
+        <li>Express.js (Node.js)</li>
+        <li>Django / Flask (Python)</li>
+        <li>Spring Boot (Java)</li>
+        <li>Laravel (PHP)</li>
+    </ul>
+</section>
+
+<section>
+    <h4>📦 What Frameworks Provide</h4>
+    <ul>
+        <li>Routing System</li>
+        <li>Middleware</li>
+        <li>Authentication Tools</li>
+        <li>Database Integration</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🚀 Goal</h4>
+    <ul>
+        <li>Build Full Backend Server</li>
+        <li>Connect with Database</li>
+        <li>Deploy Application</li>
+    </ul>
+</section>
+        `
+            },
+
+            step6: {
+                title: "DevOps Basics",
+                content: `
+<section>
+    <h4>🐳 Containerization</h4>
+    <ul>
+        <li>Docker Basics</li>
+        <li>Dockerfiles</li>
+        <li>Container vs VM</li>
+    </ul>
+</section>
+
+<section>
+    <h4>☁️ Cloud & Deployment</h4>
+    <ul>
+        <li>AWS Basics</li>
+        <li>DigitalOcean</li>
+        <li>CI/CD Pipelines</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🔄 Version Control</h4>
+    <ul>
+        <li>Git & GitHub</li>
+        <li>Branching Strategy</li>
+        <li>Automated Deployment</li>
+    </ul>
+</section>
+        `
+            }
+
+        };
+
+        document.querySelectorAll(".step").forEach(step => {
+            step.addEventListener("click", function () {
+                const stepId = this.id;
+                const data = contentData[stepId];
+
+                panel.innerHTML = `
+            <button class="close-btn" onclick="closePanel()">✖</button>
+            <h3>${data.title}</h3>
+            ${data.content}
+        `;
+
+                panel.style.display = "block";
+            });
+        });
+
+        function closePanel() {
+            panel.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

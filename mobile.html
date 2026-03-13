@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Development Roadmap</title>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+    <br><br><br>
+    <a href="explore.html" class="back-link">← All Roadmaps</a>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">&gt;_</div>
+            <div class="logo-text">CodePath</div>
+        </div>
+
+        <div class="nav-links">
+            <a href="homepage.html" class="home">Home</a>
+            <!-- <a href="#footer" class="AboutUs">AboutUs</a> -->
+            <a href="explore.html" class="Explore">Explore</a>
+            <a href="#" class="signin-btn">Sign In</a>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="icon-box">📱</div>
+            <div>
+                <h1>Mobile Development</h1>
+                <p>Create native and cross-platform mobile apps for iOS and Android..</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Timeline -->
+            <div class="timeline">
+
+                <!-- Step 1 -->
+                <div class="step" id="step1">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 1</span>
+                        <h2>Choose Your Path</h2>
+                        <p>Decide between React Native (cross-platform), Flutter, Swift (iOS), or Kotlin (Android).</p>
+                        <div class="meta">⏱ 1 weeks &nbsp;&nbsp; 📘 React Native Docs · Flutter Docs</div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step" id="step2">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 2</span>
+                        <h2>Core Concepts</h2>
+                        <p>Learn navigation, state management, and component-based architecture for mobile.</p>
+                        <div class="meta">⏱ 3-4 weeks &nbsp;&nbsp; 📘 React Navigation · Provider Pattern</div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step" id="step3">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 3</span>
+                        <h2>UI/UX for Mobile</h2>
+                        <p>Design mobile-first interfaces following platform design guidelines.</p>
+                        <div class="meta">⏱ 2-3 weeks &nbsp;&nbsp; 📘 Material Design · Human Interface Guidelines</div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step" id="step4">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 4</span>
+                        <h2>APIs & Data</h2>
+                        <p>Connect to backends, handle offline data, and manage local storage..</p>
+                        <div class="meta">⏱ 2-3 weeks &nbsp;&nbsp; 📘 Axios · AsyncStorage</div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="step" id="step5">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 5</span>
+                        <h2>Native Features</h2>
+                        <p>Access camera, GPS, notifications, and other device capabilities.</p>
+                        <div class="meta">⏱ 2-3 weeks &nbsp;&nbsp; 📘 Expo Docs · Platform APIs</div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="step" id="step6">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <span class="badge">Step 6</span>
+                        <h2>Publishing</h2>
+                        <p>Build, test, and publish your app to the App Store and Google Play.</p>
+                        <div class="meta">⏱ 1-2 weeks &nbsp;&nbsp; 📘 App Store Connect · Google Play Console</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="details-panel" id="panel">
+                <button class="close-btn" onclick="closePanel()">✖</button>
+                <h3>Choose Your Path</h3>
+
+                <section>
+                    <h4>📱 Mobile Platforms</h4>
+                    <ul>
+                        <li>Android Development</li>
+                        <li>iOS Development</li>
+                        <li>Cross-Platform Development</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>💻 Technologies to Choose</h4>
+                    <ul>
+                        <li>Kotlin (Android Native)</li>
+                        <li>Swift (iOS Native)</li>
+                        <li>Flutter (Dart)</li>
+                        <li>React Native (JavaScript)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>🎯 Goal</h4>
+                    <ul>
+                        <li>Understand platform differences</li>
+                        <li>Set up development environment</li>
+                        <li>Build your first simple mobile app</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Congratulations Box -->
+        <div class="success-box">
+            🎉 <strong>Congratulations!</strong><br>
+            You've completed the Mobile Development roadmap. Keep building projects and never stop learning!
+        </div>
+
+    </div>
+
+    <script>
+        const panel = document.getElementById("panel");
+
+        const contentData = {
+
+            step1: {
+                title: "Choose Your Path",
+                content: `
+<section>
+    <h4>📱 Mobile Platforms</h4>
+    <ul>
+        <li>Android Development</li>
+        <li>iOS Development</li>
+        <li>Cross-Platform Development</li>
+    </ul>
+</section>
+
+<section>
+    <h4>💻 Technologies to Choose</h4>
+    <ul>
+        <li>Kotlin (Android Native)</li>
+        <li>Swift (iOS Native)</li>
+        <li>Flutter (Dart)</li>
+        <li>React Native (JavaScript)</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Understand platform differences</li>
+        <li>Set up development environment</li>
+        <li>Build your first simple mobile app</li>
+    </ul>
+</section>
+        `
+            },
+
+            step2: {
+                title: "Core Concepts",
+                content: `
+<section>
+    <h4>⚙️ Programming Basics</h4>
+    <ul>
+        <li>Variables & Data Types</li>
+        <li>Functions & Classes</li>
+        <li>Object-Oriented Programming</li>
+        <li>Error Handling</li>
+    </ul>
+</section>
+
+<section>
+    <h4>📱 App Components</h4>
+    <ul>
+        <li>Activities / ViewControllers</li>
+        <li>Fragments / Screens</li>
+        <li>Navigation between screens</li>
+        <li>App lifecycle</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Build multi-screen apps</li>
+        <li>Understand app structure</li>
+        <li>Manage app navigation</li>
+    </ul>
+</section>
+        `
+            },
+
+            step3: {
+                title: "UI/UX for Mobile",
+                content: `
+<section>
+    <h4>🎨 UI Design Basics</h4>
+    <ul>
+        <li>Layouts (ConstraintLayout, Stack, Flexbox)</li>
+        <li>Buttons, TextFields, Images</li>
+        <li>Lists (RecyclerView / ListView)</li>
+        <li>Responsive Design</li>
+    </ul>
+</section>
+
+<section>
+    <h4>✨ UX Principles</h4>
+    <ul>
+        <li>User-friendly navigation</li>
+        <li>Consistent design</li>
+        <li>Material Design (Android)</li>
+        <li>Human Interface Guidelines (iOS)</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Create beautiful interfaces</li>
+        <li>Improve user experience</li>
+        <li>Build responsive layouts</li>
+    </ul>
+</section>
+        `
+            },
+
+            step4: {
+                title: "APIs & Data",
+                content: `
+<section>
+    <h4>🌐 Working with APIs</h4>
+    <ul>
+        <li>REST APIs</li>
+        <li>HTTP Requests (GET, POST)</li>
+        <li>JSON Parsing</li>
+        <li>API integration</li>
+    </ul>
+</section>
+
+<section>
+    <h4>💾 Local Storage</h4>
+    <ul>
+        <li>SharedPreferences / UserDefaults</li>
+        <li>SQLite Database</li>
+        <li>Room Database</li>
+        <li>Offline storage</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Fetch data from server</li>
+        <li>Store data locally</li>
+        <li>Build data-driven apps</li>
+    </ul>
+</section>
+        `
+            },
+
+            step5: {
+                title: "Native Features",
+                content: `
+<section>
+    <h4>📷 Device Features</h4>
+    <ul>
+        <li>Camera access</li>
+        <li>Location (GPS)</li>
+        <li>Microphone</li>
+        <li>Gallery access</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🔔 System Features</h4>
+    <ul>
+        <li>Push Notifications</li>
+        <li>Background services</li>
+        <li>Permissions handling</li>
+        <li>Sensors</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Use real device features</li>
+        <li>Build advanced apps</li>
+        <li>Create interactive experiences</li>
+    </ul>
+</section>
+        `
+            },
+
+            step6: {
+                title: "Publishing",
+                content: `
+<section>
+    <h4>🚀 App Testing</h4>
+    <ul>
+        <li>Test on real devices</li>
+        <li>Debug errors</li>
+        <li>Performance optimization</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🏪 App Deployment</h4>
+    <ul>
+        <li>Google Play Store publishing</li>
+        <li>Apple App Store publishing</li>
+        <li>App signing</li>
+        <li>Version management</li>
+    </ul>
+</section>
+
+<section>
+    <h4>🎯 Goal</h4>
+    <ul>
+        <li>Publish your app</li>
+        <li>Reach real users</li>
+        <li>Maintain and update app</li>
+    </ul>
+</section>
+        `
+            }
+
+        };
+
+        document.querySelectorAll(".step").forEach(step => {
+            step.addEventListener("click", function () {
+                const stepId = this.id;
+                const data = contentData[stepId];
+
+                panel.innerHTML = `
+            <button class="close-btn" onclick="closePanel()">✖</button>
+            <h3>${data.title}</h3>
+            ${data.content}
+        `;
+
+                panel.style.display = "block";
+            });
+        });
+
+        function closePanel() {
+            panel.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
