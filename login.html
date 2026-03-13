@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Roadmap Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Background */
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eaeaea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Login Card */
+        .login-container {
+            background: rgba(40, 40, 40, 0.95);
+            padding: 40px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+
+        /* Heading */
+        .login-container h2 {
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        /* Input Fields */
+        .input-box {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            background: #2f2f2f;
+            color: white;
+            font-size: 15px;
+        }
+
+        .input-box::placeholder {
+            color: #aaa;
+        }
+
+        /* Login Button */
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 6px;
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Extra links */
+        .extra {
+            margin-top: 15px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .extra a {
+            color: #4facfe;
+            text-decoration: none;
+        }
+
+        .extra a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h2>Login</h2>
+
+        <form onsubmit="login(event)">
+
+            <input type="email" placeholder="Enter Email" class="input-box" required>
+
+            <input type="password" placeholder="Enter Password" class="input-box" required>
+
+            <button type="submit" class="login-btn">Login</button>
+
+        </form>
+
+        <div class="extra">
+            Don't have an account? <a href="register.html">Register</a>
+        </div>
+
+    </div>
+
+    <script>
+
+        function login(event) {
+            event.preventDefault();
+            alert("Login Successful!");
+            window.location.href = "homepage.html";
+        }
+
+    </script>
+
+</body>
+
+</html>
