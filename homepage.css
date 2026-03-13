@@ -1,0 +1,218 @@
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+     background-color: #eaeaea;
+}
+
+/* NAVBAR */
+.navbar{
+    position: fixed;       /* Makes it sticky */
+    top: 0;                /* Sticks to top */
+    left: 0;
+    width: 100%;           /* Full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    z-index: 1000;         /* Keeps it above other content */
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-icon{
+    background:#333;
+    color:white;
+    font-weight:bold;
+    padding:8px 10px;
+    border-radius:6px;
+    font-size:16px;
+    font-family:monospace;
+}
+
+.logo-text{
+    font-size:22px;
+    font-weight:700;
+    color:#222;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-size:16px;
+}
+
+.nav-links .signin-btn{
+    background:#333;
+    color:white;
+    padding:8px 16px;
+    border-radius:8px;
+}
+
+/* HERO SECTION */
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+/* SMALL TAG */
+.tag{
+    display:inline-block;
+    background:#eaeaea;
+    padding:8px 18px;
+    border-radius:20px;
+    font-size:14px;
+    margin-bottom:25px;
+}
+
+/* MAIN HEADING */
+.hero h1{
+    font-size:64px;
+    font-weight:800;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+/* GRADIENT TEXT */
+.gradient-text{
+    background:linear-gradient(90deg,#00c6ff,#7b2ff7);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+/* SUBTEXT */
+.subtext{
+    font-size:20px;
+    color:#666;
+    max-width:800px;
+    margin:0 auto 30px auto;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    background:#333;
+    color:white;
+    padding:15px 30px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:black;
+    transform:scale(1.05);
+}
+
+/* STATS SECTION */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:120px;
+    margin-top:80px;
+    text-align:center;
+}
+
+.stat-box h2{
+    font-size:48px;
+    font-weight:700;
+    background:linear-gradient(90deg,#00c6ff,#7b2ff7);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.stat-box p{
+    font-size:18px;
+    color:#666;
+    margin-top:5px;
+}
+
+/* DOMAIN SECTION */
+.domain-section{
+    margin-top:100px;
+    text-align:center;
+}
+
+.domain-title{
+    font-size:48px;
+    font-weight:800;
+}
+
+.domain-subtext{
+    max-width:700px;
+    margin:20px auto 0 auto;
+    font-size:20px;
+    color:#666;
+}
+
+/* FOOTER SECTION */
+.footer{
+    background:#111;
+    color:white;
+    padding:60px 80px 20px 80px;
+    margin-top:100px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
+    margin-bottom:40px;
+}
+
+.footer-brand p{
+    margin-top:15px;
+    color:#aaa;
+}
+
+.footer-contact h4,
+.footer-social h4{
+    margin-bottom:15px;
+}
+
+.footer-contact p{
+    color:#aaa;
+    margin-bottom:10px;
+}
+
+.footer-social a{
+    display:block;
+    text-decoration:none;
+    color:#aaa;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+
+.footer-social a:hover{
+    color:white;
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid #333;
+    padding-top:20px;
+    font-size:14px;
+    color:#aaa;
+}
+
+.footer .logo-text{
+    color: white;
+}
